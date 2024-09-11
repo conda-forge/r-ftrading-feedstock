@@ -1,6 +1,5 @@
 {% set version = '3042.79' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-ftrading
@@ -13,8 +12,7 @@ source:
   sha256: 3e99963eb59891b14a1531f8b30692c59ae0e2a97a6d63c3ad3b37772d79ce76
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
